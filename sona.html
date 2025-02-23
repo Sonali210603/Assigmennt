@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Fixed Header Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        .fixed-header {
+            background-color: #1e1e1e;
+            color: palegoldenrod;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17px 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .fixed-header nav a {
+            color: paleturquoise;
+            margin: 0 17px;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        .fixed-header nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            margin-top: 90px; 
+            padding: 20px;
+        }
+
+        .content {
+            height: 200vh; 
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: gray;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <p>This is an enhanced example of a fixed header. Scroll to see the sticky effect.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

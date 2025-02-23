@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* Changed from solid color to a linear gradient */
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    li a:hover {
+      /* Changed hover background to a green shade */
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .active {
+      /* Changed active background to a soft red */
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+</body>
+</html>

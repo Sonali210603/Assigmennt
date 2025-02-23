@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadan Mubarak!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            font-size: 30px;
+            color: #fff;
+        }
+        img {
+            width: 200px;
+        }
+        .content {
+            margin: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Ramadan Mubarak!
+    </header>
+    
+    <div class="content">
+        <section>
+            <h2>What is Ramadan?</h2>
+            <p>Ramadan is the ninth month of the Islamic lunar calendar. It is a month of fasting, prayer, reflection, and community for Muslims around the world.</p>
+        </section>
+
+        <section>
+            <h2>Popular Ramadan Customs</h2>
+            <ul>
+                <li>Fasting from dawn to sunset</li>
+                <li>Increased prayer and reading of the Quran</li>
+                <li>Charity and helping those in need</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ramadan Countdown</h2>
+            <p>Days until Ramadan: <span id="countdown"></span></p>
+        </section>
+
+        <section>
+            <h2>Ramadan Recipes</h2>
+            <ul>
+                <li>Iftar: Dates, soup, and bread</li>
+                <li>Suhoor: Yogurt, fruits, and porridge</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Ramadan Celebrations | Contact us: info@ramadancelebrations.com
+    </footer>
+
+    <script>
+        // Countdown to the next Ramadan
+        const currentDate = new Date();
+        const nextRamadan = new Date('2025-03-25'); // Example date for next Ramadan
+        const timeDiff = nextRamadan - currentDate;
+        const daysRemaining = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        
+        document.getElementById("countdown").innerText = daysRemaining + " days";
+    </script>
+</body>
+</html>

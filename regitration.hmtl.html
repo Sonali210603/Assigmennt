@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form action="submit_form.php" method="POST">
+        <table>
+            <tr>
+                <th>Enter your first name</th>
+                <td><input type="text" name="firstName" required placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <th>Enter your last name</th>
+                <td><input type="text" name="lastName" required placeholder="Enter your last name"></td>
+            </tr>
+            <tr>
+                <th>Enter your password</th>
+                <td><input type="password" name="password" required minlength="6" placeholder="Enter a strong password"></td>
+            </tr>
+            <tr>
+                <th>Re-enter your password</th>
+                <td><input type="password" name="rePassword" required minlength="6" placeholder="Confirm your password"></td>
+            </tr>
+            <tr>
+                <th>Enter your email</th>
+                <td><input type="email" name="email" required placeholder="example@example.com"></td>
+            </tr>
+            <tr>
+                <th>Enter your mobile</th>
+                <td><input type="tel" name="mobile" required pattern="[0-9]{10}" placeholder="10-digit mobile number"></td>
+            </tr>
+            <tr>
+                <th>Enter your address</th>
+                <td><textarea name="address" rows="5" required placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <th>Select your gender</th>
+                <td>
+                    <input type="radio" name="gender" value="male" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Select your hobbies</th>
+                <td>
+                    <input type="checkbox" name="hobbies[]" value="Cookining" id="hobby1">
+                    <label for="hobby1">Cookining</label>
+                    <input type="checkbox" name="hobbies[]" value="dancening" id="hobby2">
+                    <label for="hobby2">Dancening</label>
+                    <input type="checkbox" name="hobbies[]" value="singnig" id="hobby3">
+                    <label for="hobby3">singnig</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Select your DOB</th>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <th>Select your Country</th>
+                <td>
+                    <select name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Upload your image</th>
+                <td><input type="file" name="picture" accept="image/*"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center-button">
+                    <input type="submit" value="Save My Data">
+                    <input type="reset" value="Reset Data">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

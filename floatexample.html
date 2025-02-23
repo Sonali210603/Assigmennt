@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Example</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+      color: black;
+      padding: 20px;
+    }
+
+    .left-box {
+      background-color: purple;
+      float: left;
+    }
+
+    .right-box {
+      background-color: yellow;
+      float: right;
+    }
+
+    .content {
+      background-color: lightcoral;
+      padding: 20px;
+      clear: both; /* Clears floats to prevent overlap */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-box box">Floated Left</div>
+  <div class="right-box box">Floated Right</div>
+  <div class="content">This content appears below the floated boxes.</div>
+
+</body>
+</html>
